@@ -1,71 +1,95 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-}
-
-nav li {
-  margin-right: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-ul {
-  list-style: none;
+/* Reset CSS */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-li a {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #ffffffec;
+}
+
+a {
   text-decoration: none;
+  color: #333;
 }
 
-/* Form Styles */
-label {
-  display: block;
-  margin-bottom: 0.5rem;
+/* Layout Styles */
+header {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+font-weight: bold;
+transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+color: #0077cc;
+}
+
+main {
+max-width: 800px;
+margin: 2rem auto;
+padding: 0 1rem;
+}
+
+section {
+margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin-bottom: 1rem;
+}
+
+footer {
+background-color: #ddd;
+padding: 1rem;
+text-align: center;
+margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+nav {
+flex-direction: column;
+}
+
+nav li {
+margin: 0.5rem 0;
+}
+}
